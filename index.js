@@ -65,6 +65,15 @@ client.connect((err) => {
             })
             .then((result) => res.send(result.deletedCount > 0));
     });
+
+    app.get("/orders", (req, res) => {
+        const queryEmail = req.query.email;
+        ordersCollection
+            .find({ email: queryEmail })
+            .toArray((err, documents) => {
+                res.send(documents);
+            });
+    });
 });
 
 app.get("/", (req, res) => {
