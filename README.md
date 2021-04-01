@@ -13,4 +13,4 @@ My project includes:
 3.  [Express.js](https://expressjs.com/),
 4.  [Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) ,
 5.  [Environment Variables](https://www.npmjs.com/package/dotenv) and
-6.  [Heroku Deployment](https://devcenter.heroku.com/categories/reference)
+6.  [Heroku Deployment](https://devcenter.heroku.com/categories/reference).
