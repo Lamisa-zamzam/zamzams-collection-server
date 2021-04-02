@@ -84,6 +84,26 @@ client.connect((err) => {
                 console.log(documents);
             });
     });
+
+    app.patch("/updateTask/:product", (req, res) => {
+        taskCollection
+            .updateOne(
+                { product: req.params.product },
+                {
+                    $set: {
+                        product: req.body.product,
+                        size: req.body.size,
+                        price: req.body.price,
+                        owner: req.body.owner,
+                        detail: req.body.detail,
+                    },
+                }
+            )
+            .then((result) => {
+                res.send(result.modifiedCount > 0);
+                console.log(result);
+            });
+    });
 });
 
 app.get("/", (req, res) => {
