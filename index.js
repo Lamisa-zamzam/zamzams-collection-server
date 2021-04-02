@@ -86,7 +86,7 @@ client.connect((err) => {
     });
 
     app.patch("/editProduct/:product", (req, res) => {
-        taskCollection
+        productCollection
             .updateOne(
                 { product: req.params.product },
                 {
