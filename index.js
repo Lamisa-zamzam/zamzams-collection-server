@@ -85,10 +85,10 @@ client.connect((err) => {
             });
     });
 
-    app.patch("/editProduct/:product", (req, res) => {
+    app.patch("/editProduct/:_id", (req, res) => {
         productCollection
             .updateOne(
-                { product: req.params.product },
+                { _id: ObjectID(req.params.id) },
                 {
                     $set: {
                         product: req.body.product,
