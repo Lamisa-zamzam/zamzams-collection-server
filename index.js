@@ -85,7 +85,7 @@ client.connect((err) => {
             });
     });
 
-    app.patch("/updateTask/:product", (req, res) => {
+    app.patch("/editProduct/:product", (req, res) => {
         taskCollection
             .updateOne(
                 { product: req.params.product },
@@ -95,7 +95,7 @@ client.connect((err) => {
                         size: req.body.size,
                         price: req.body.price,
                         owner: req.body.owner,
-                        detail: req.body.detail,
+                        detail: req.body.owner,
                     },
                 }
             )
