@@ -74,6 +74,16 @@ client.connect((err) => {
                 res.send(documents);
             });
     });
+
+    app.get("/search/:searchStr", (req, res) => {
+        const searchStr = req.params.searchStr;
+        productCollection
+            .find({ product: new RegExp(searchStr, "i") })
+            .toArray((err, documents) => {
+                res.send(documents);
+                console.log(documents);
+            });
+    });
 });
 
 app.get("/", (req, res) => {
