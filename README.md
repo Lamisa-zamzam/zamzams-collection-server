@@ -4,6 +4,10 @@ Welcome to my server!!! Here you can request a number of data which is basically
 
 ## [Visit My Root API](https://powerful-springs-02476.herokuapp.com/)
 
+## My client side code: [https://github.com/Lamisa-zamzam/zamzams-collection](https://github.com/Lamisa-zamzam/zamzams-collection)
+
+## My live site: [https://full-stack-sport-grocery.web.app/](https://full-stack-sport-grocery.web.app/)
+
 Secondly, if you call [The Products API](https://powerful-springs-02476.herokuapp.com/products), you will get the data of several jerseys to be sold in an array. The array contains an object for each jersey and each object contains some properties, namely: \_id, id, product(title of the jersey), price, detail and image(URL to the picture of the jersey). Though they are not real ones, however, that could work great as placeholders.
 
 If you want to get the information of a specific product, you're gonna do that with [https://powerful-springs-02476.herokuapp.com/product/:id](https://powerful-springs-02476.herokuapp.com/product/:id). But wait!!! You have to replace :id with the id of the product you want to get and also this API is private, so you are not going to get the info until you are logged in in My Website [Zamzam's Collection](https://full-stack-sport-grocery.web.app/). Actually, this server was made only for this website, so this website has a power over this server. You can [add product to this server](https://powerful-springs-02476.herokuapp.com/addProduct), [add an order for your chosen jersey](https://powerful-springs-02476.herokuapp.com/addOrder) and even [delete](https://powerful-springs-02476.herokuapp.com/deleteProduct/:_id) or [Edit](https://powerful-springs-02476.herokuapp.com/editProduct/:product) a product form here using that website. But again, you have to be logged in in that website and have the id of the specific product in the cases you need it.
@@ -16,3 +20,6 @@ My project includes:
 4.  [Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) ,
 5.  [Environment Variables](https://www.npmjs.com/package/dotenv) and
 6.  [Heroku Deployment](https://devcenter.heroku.com/categories/reference).
+
+Contributing
+Pull requests are welcome. For major changes, open an issue first and let's discuss what you want to change.
