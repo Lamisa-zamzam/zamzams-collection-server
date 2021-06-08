@@ -21,5 +21,5 @@ My project includes:
 5.  [Environment Variables](https://www.npmjs.com/package/dotenv) and
 6.  [Heroku Deployment](https://devcenter.heroku.com/categories/reference).
 
-Contributing
+### Contributing
 Pull requests are welcome. For major changes, open an issue first and let's discuss what you want to change.
